@@ -41,19 +41,6 @@ python {{cookiecutter.app_name}}/manage.py createsuperuser
 python {{cookiecutter.app_name}}/manage.py runserver
 ```
 
-# Create Servers
-By default the included fabfile will setup three environments:
-
-- dev -- The bleeding edge of development
-- qa -- For quality assurance testing
-- prod -- For the live application
-
-Create these servers on Heroku with:
-
-```bash
-fab init
-```
-
 # Automated Deployment
 Deployment is handled via Travis. When builds pass Travis will automatically deploy that branch to Heroku. Enable this with:
 ```bash

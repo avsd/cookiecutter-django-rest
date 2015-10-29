@@ -1,31 +1,26 @@
 # Django
-django==1.8.4
+django==1.8.5
 
 # Environmental var configuration
 # Django 1.8+ compatible django-configurations
--e git+https://github.com/alfetopito/django-configurations.git@71b5142354aceb5461d29e5d9e1cdf30b64b657f#egg=django_configurations-master
+#-e git+https://github.com/alfetopito/django-configurations.git@71b5142354aceb5461d29e5d9e1cdf30b64b657f#egg=django_configurations-master
+-e git+https://github.com/avsd/django-configurations.git@0d607aef1e63df1b1d1cbe4fcfbc1459af1668c1#egg=django_configurations-master
 
 
 # For the persistence stores
 psycopg2==2.6
 dj-database-url==0.3.0
 
-# Models
-django-model-utils==2.3.1
-
 # Rest apis
 djangorestframework==3.2.3
 Markdown==2.6.2
 django-filter==0.11.0
 
-# Static files
-whitenoise==2.0.3
-
 # Media files
 boto==2.38.0
 
 # Image manipulation
-django-versatileimagefield==1.0.4
+#django-versatileimagefield==1.0.4
 
 # push notifications
 django-pnm==0.1.6

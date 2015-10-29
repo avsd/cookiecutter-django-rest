@@ -29,17 +29,10 @@ Example of the result: https://github.com/agconti/piedpiper-web
 - Django 1.8+
 - PostgreSQL
 - Complete [Django Rest Framework](http://www.django-rest-framework.org/) integration
-- Configured for deploying to [Heroku](www.heroku.com)
 - Asset storage via [S3](https://github.com/jschneier/django-storages)
 - [Travis](https://travis-ci.org/) config
-- Monitoring with [New Relic](http://newrelic.com/)
-- [Token authentication](http://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication)
-- Docs with [mkdocs](http://www.mkdocs.org/)
-- Testing with [django-nose](https://github.com/django-nose/django-nose) and fixtures via [factory-boy](http://factoryboy.readthedocs.org/en/latest/orms.html)
-- Caching with Redis via [Django Redis](https://github.com/niwinz/django-redis)
 - Easy debugging with [ipython](http://ipython.org/) and [ipdb](https://pypi.python.org/pypi/ipdb)
 - Style Enforcement via [flake8](https://flake8.readthedocs.org/en/2.3.0/)
-- Fabfile for easily setting up servers
 
 ## Contributing
 Want a new feature or find a bug? Submit a Pull Request!
