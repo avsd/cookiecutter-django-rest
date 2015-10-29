@@ -4,6 +4,7 @@ from configurations import values
 from boto.s3.connection import OrdinaryCallingFormat
 from .common import Common
 
+
 class Production(Common):
 
     # Honor the 'X-Forwarded-Proto' header for request.is_secure()
@@ -60,7 +61,8 @@ class Production(Common):
     }
 
     # Static files
-    STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+    # STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+    STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
     # Caching
     redis_url = urlparse.urlparse(os.environ.get('REDISTOGO_URL', 'redis://localhost:6379'))
